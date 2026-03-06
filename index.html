@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
     <head>
         <meta charset="UTF-8">
         <title>Home - Friday Candy</title>
@@ -9,19 +9,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         
         <style>
+            /* Tvingar Roboto på hela sidan */
+            body, h1, p, ul, li {
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .scroll-container {
+                padding: 20px;
+                display: inline-block;
+                border: 1px solid #eee;
+                border-radius: 12px;
+                max-width: 300px;
+            }
+
             .product-list {
                 list-style-type: none;
                 padding: 0;
-                margin: 10px 0;
-                font-size: 0.9em;
-                line-height: 1.6;
-                color: #555;
+                margin: 15px 0;
+                font-size: 0.95em;
+                line-height: 1.4;
             }
-            .scroll-container {
-                padding: 20px;
-                border: 1px solid #eee;
-                display: inline-block;
-                border-radius: 8px;
+
+            .allergy-info {
+                margin-top: 15px;
+                font-size: 0.85em;
+                color: #d9534f;
+            }
+
+            .price-tag {
+                font-size: 1.1em;
+                margin-bottom: 5px;
             }
         </style>
     </head>
@@ -34,8 +51,9 @@
         <p class="ptext">Our sortiment:</p>
 
         <div class="scroll-container">
-            <img src="IMG_2810.jpeg" alt="Candy 1">
-            <p class="ptext"><strong>Friday Mix - 20kr</strong></p>
+            <img src="IMG_2810.jpeg" alt="Candy 1" style="width: 100%; border-radius: 8px;">
+            
+            <p class="price-tag"><strong>Friday Mix 200g 20kr</strong></p>
             
             <ul class="product-list">
                 <li>- Tuttifrutti</li>
@@ -49,6 +67,10 @@
                 <li>- Colanappar</li>
                 <li>- Sura maskar</li>
             </ul>
+
+            <p class="allergy-info">
+                Innehåller <strong>gluten</strong> och <strong>gelatin</strong>.
+            </p>
         </div>
     </body>
 </html>
