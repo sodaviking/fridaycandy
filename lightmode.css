@@ -1,65 +1,58 @@
 body {
     background-color: rgb(219, 255, 255);
     font-family: "Roboto", sans-serif;
-    animation: fadeIn 0.8s ease-in;
 }
-
-/* Logo button */
 
 .hover-btn {
     display: inline-block;
     margin-left: 10px;
     width: 100px;
     transition: transform 0.3s ease;
-
-    text-decoration: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
 }
 
 .hover-btn img {
     width: 100%;
     display: block;
-    border: none;
 }
 
 .hover-btn:hover {
     transform: scale(1.2);
 }
 
-.hover-btn:active {
-    opacity: 0.8;
-    transform: scale(1);
-}
-
-/* Text */
-
 .text1 {
     margin-left: 10px;
+    font-size: 32px;
+    animation: slideIn 0.8s ease-out;
 }
 
 .ptext {
     margin-left: 15px;
     font-size: 18px;
+    animation: slideIn 1s ease-out;
 }
 
-/* Product scroll area */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 .scroll-container {
     margin-top: 30px;
     display: flex;
     overflow-x: auto;
-    white-space: nowrap;
     gap: 20px;
     padding: 20px;
-
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+    animation: fadeProducts 1.2s ease;
 }
-
-/* Product card */
 
 .product-card {
     background-color: white;
@@ -67,31 +60,24 @@ body {
     padding: 15px;
     width: 220px;
     flex-shrink: 0;
-
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-
-    animation: floatCandy 3s ease-in-out infinite;
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .product-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
-
-/* Images */
 
 .product-card img {
     width: 100%;
     border-radius: 8px;
-    transition: transform 0.25s;
+    transition: transform 0.25s ease;
 }
 
 .product-card img:hover {
     transform: scale(1.08);
 }
-
-/* Lists */
 
 .product-list {
     list-style: none;
@@ -104,14 +90,10 @@ body {
     margin: 3px 0;
 }
 
-/* Price */
-
 .price-tag {
     font-size: 16px;
     margin-top: 8px;
 }
-
-/* Allergy text */
 
 .allergy-info {
     margin-top: 10px;
@@ -119,27 +101,12 @@ body {
     color: #d9534f;
 }
 
-/* Animations */
-
-@keyframes fadeIn {
+@keyframes fadeProducts {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
-    }
-}
-
-@keyframes floatCandy {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-6px);
-    }
-
-    100% {
-        transform: translateY(0px);
     }
 }
