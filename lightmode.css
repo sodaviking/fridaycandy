@@ -75,9 +75,6 @@ body {
     transition: transform 0.25s ease;
 }
 
-.product-card img:hover {
-    transform: scale(1.08);
-}
 
 .product-list {
     list-style: none;
