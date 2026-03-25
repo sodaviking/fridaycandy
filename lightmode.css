@@ -1,14 +1,17 @@
 body {
     background-color: rgb(219, 255, 255);
+    font-family: "Roboto", sans-serif;
+    animation: fadeIn 0.8s ease-in;
 }
 
+/* Logo button */
+
 .hover-btn {
-    display: inline-block; 
-    
+    display: inline-block;
     margin-left: 10px;
     width: 100px;
     transition: transform 0.3s ease;
-    
+
     text-decoration: none;
     background: none;
     border: none;
@@ -17,9 +20,9 @@ body {
 }
 
 .hover-btn img {
-    width: 100%; 
-    display: block; 
-    border: none; 
+    width: 100%;
+    display: block;
+    border: none;
 }
 
 .hover-btn:hover {
@@ -31,17 +34,18 @@ body {
     transform: scale(1);
 }
 
+/* Text */
 
 .text1 {
     margin-left: 10px;
-    font-family: "Roboto", sans-serif;
 }
 
 .ptext {
     margin-left: 15px;
-    font-family: "Roboto", sans-serif;
     font-size: 18px;
 }
+
+/* Product scroll area */
 
 .scroll-container {
     margin-top: 30px;
@@ -50,19 +54,92 @@ body {
     white-space: nowrap;
     gap: 20px;
     padding: 20px;
+
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
 }
 
-.scroll-container img {
-    width: 200px;
-    height: auto;
+/* Product card */
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    width: 220px;
     flex-shrink: 0;
-    border-radius: 8px;
-    transition: transform 0.2s;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    animation: floatCandy 3s ease-in-out infinite;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.scroll-container img:hover {
-    transform: scale(1.05);
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
 
+/* Images */
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.25s;
+}
+
+.product-card img:hover {
+    transform: scale(1.08);
+}
+
+/* Lists */
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.product-list li {
+    margin: 3px 0;
+}
+
+/* Price */
+
+.price-tag {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+/* Allergy text */
+
+.allergy-info {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #d9534f;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatCandy {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
