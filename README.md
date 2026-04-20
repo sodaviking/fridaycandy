@@ -1,1 +1,1 @@
-friday candy skövde
+friday candy swe
