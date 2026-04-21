@@ -22,13 +22,13 @@ body {
 .text1 {
     margin-left: 10px;
     font-size: 32px;
-    animation: slideIn 0.8s ease-in;
+    animation: slideIn 0.8s ease-out;
 }
 
 .ptext {
     margin-left: 15px;
     font-size: 18px;
-    animation: slideIn 1s ease-in;
+    animation: slideIn 1s ease-out;
 }
 
 @keyframes slideIn {
