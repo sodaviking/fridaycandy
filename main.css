@@ -130,11 +130,13 @@ body {
 .under-price {
     margin-top: 5px;
     font-size: 12px;
+    color: rgb(0,0,0);
 }
 
 .allergy-info {
     margin-top: 10px;
     font-size: 12px;
+    color: rgb(0,0,0);
 }
 
 .product-card:nth-child(1) { animation-delay: 0.25s; }
