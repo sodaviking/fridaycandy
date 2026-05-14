@@ -24,7 +24,7 @@ body {
 }
 
 .call-button {
-    position: fixed;
+    position: absolute;
     top: 25px;
     right: 25px;
     display: inline-flex;
@@ -56,7 +56,7 @@ body {
 }
 
 .swish-button {
-    position: fixed;
+    position: absolute;
     top: 75px;
     right: 25px;
     display: inline-flex;
