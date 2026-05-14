@@ -41,9 +41,6 @@ body {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     z-index: 9999;
     animation: textEnter 0.8s ease-out;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 
@@ -76,9 +73,6 @@ body {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     z-index: 9999;
     animation: textEnter 0.8s ease-out;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 
