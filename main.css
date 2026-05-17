@@ -15,9 +15,6 @@ body {
     display: block;
 }
 
-.hover-btn:hover {
-    transform: scale(1.2);
-}
 
 .toggle-btn {
     cursor: pointer;
@@ -89,7 +86,7 @@ body {
 
 .text1 {
     margin-left: 10px;
-    font-size: 32px;
+    font-size: 32px;    
     animation: textEnter 0.8s ease-out;
 }
 
@@ -154,7 +151,7 @@ body {
     background-color: rgb(245, 255, 255);
     border-radius: 12px;
     padding: 15px;
-    width: 220px;
+    width: 280px;
     min-height: 333px;
     flex-shrink: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -163,10 +160,6 @@ body {
     animation: cardSlide 0.6s ease forwards;
 }
 
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-}
 
 .product-card img {
     width: 100%;
@@ -225,3 +218,33 @@ body {
         transform: translateX(0) scale(1);
     }
 }
+
+@media (max-width: 743px) { /*mobil telefon*/
+
+    .scroll-container {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+}
+
+@media (min-width: 744px) { /*dator, ipad*/
+
+    .hover-btn:hover {
+        transform: scale(1.2);
+    }
+
+    .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+}
+
