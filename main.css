@@ -118,11 +118,6 @@ body {
 
 .extra-content {
     display: none;
-    background: linear-gradient(to right, #001b27, #EF88BE);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
 }
 
 @keyframes textEnter {
